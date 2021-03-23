@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width,minimum-scale=1.0 maximum-scale=1.0 user-scalable=no' />
+	<title>YanGo</title>
+	<script type="text/javascript" src="http://www.xxiaoyuan.top/jquery-1.9.1.js"></script>
+	<style>
+		*{
+			padding: 0;
+			margin: 0 auto;
+		}
+		li{
+			list-style-type: none;
+		}
+		.box{
+			margin: auto;
+		}
+		.bar{
+			position: relative;
+			float: left;
+			width: 33.33%;
+			text-align: center;
+		}
+		.bar p{
+			background-color: #08c;
+			color: #fff;
+			height: 40px;
+			line-height: 40px;
+		}
+		.bar ul{
+			display: none;
+			margin-top: 10px;
+			position: relative;
+			top: 0;
+			background: #29a7e6;
+			color: #fff;
+			width: 80%;
+			position: relative;
+			border-radius: 10px;
+		}
+		.bar ul:before{
+			position: absolute;
+			content: "";
+			top: -8px;
+			background: #29a7e6;
+			width: 15px;
+			height: 15px;
+			left: 46%;
+			transform:rotate(45deg);
+			z-index: -1;
+		}
+		.bar ul li{
+			height: 35px;
+			line-height: 35px;
+		}
+		.box li:active{
+			background: rgba(255,255,255,.3);
+		}	
+	</style>
+</head>
+<body>
+	<div class="box">
+		<ul class="ul1">
+			<li class="bar">
+				<p>早餐</p>
+				<ul>
+					<li>糕点</li>
+					<li>稀粥</li>
+					<li>营养</li>
+				</ul>
+			</li>
+			<li class="bar">
+				<p>午餐</p>
+				<ul>
+					<li>小炒</li>
+					<li>凉拌</li>
+					<li>甜点</li>
+				</ul>
+			</li>
+			<li class="bar">
+				<p>晚餐</p>
+				<ul>
+					<li>汤类</li>
+					<li>肉类</li>
+					<li>清淡</li>
+				</ul>
+			</li>
+			<div style="clear: both;"></div>
+		</ul>
+	</div>
+</body>
+<script>
+	$(".bar").click(function(){
+		if($(this).children("ul").css("display") == "block"){
+			$(this).children("ul").slideUp(300);
+		}
+		else{
+			$(this).children("ul").slideDown(300);
+		}
+	});
+</script>
+</html>

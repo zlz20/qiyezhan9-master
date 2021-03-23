@@ -1,0 +1,91 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#titleAA {
+  background: #282c34;
+  color: white;
+  padding-bottom: 10px;
+  width: 100%;
+
+}
+#titleDivAA {
+  position: relative;
+ 
+}
+#infoAA{
+  /* min-height: 408px; */
+  
+}
+#titleDivAA .red {
+  height: 30px;
+  width: 8px;
+  background: red;
+  display: inline-block;
+
+}
+
+#titleDivAA .newsTitle {
+  font-size: 28px;
+  height: 28px;
+  line-height: 28px;
+  display: inline-block;
+  position: absolute;
+  left: 30px;
+}
+
+#titleDivAA .dateAA {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+#infoAA img {
+  width: auto ;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+
+/* -------------------------------------------- */
+@media screen and (max-width: 576px) {
+  #titleDivAA .red {
+    height: 24px;
+  }
+  #titleDivAA .newsTitle {
+    font-size: 16px;
+  }
+  #titleDivAA .dateAA {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  #infoAA img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  #titleDivAA .red {
+    height: 26px;
+  }
+  #titleDivAA .newsTitle {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) {
+  
+}
+@media screen and (min-width: 992px) {
+  #titleDivAA .newsTitle {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  
+}
